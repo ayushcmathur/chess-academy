@@ -1,0 +1,194 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessCraze Academy - Clone</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- 1. Navigation Bar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-chess-knight text-indigo-600 text-2xl"></i>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">ChessCraze</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#how-it-works" class="hover:text-indigo-600 transition">How It Works</a>
+                    <a href="#coaches" class="hover:text-indigo-600 transition">Coaches</a>
+                    <a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a>
+                    <a href="#faqs" class="hover:text-indigo-600 transition">FAQs</a>
+                </div>
+                <div>
+                    <a href="#cta" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-indigo-700 transition shadow-md">Book Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <header class="relative bg-gradient-to-br from-slate-900 to-indigo-950 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-3 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">Online Chess Academy</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    From First Move to <span class="text-indigo-400">Grandmaster</span> Strategist
+                </h1>
+                <p class="text-lg text-slate-300 max-w-lg">
+                    Global FIDE-rated coaches for kids & teens in a structured, fun, online program. Discover your child's true potential today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="#cta" class="bg-indigo-500 text-white text-center px-8 py-4 rounded-xl font-bold text-lg hover:bg-indigo-600 transition transform hover:-translate-y-0.5 shadow-lg shadow-indigo-500/20">Book Your Free Trial</a>
+                    <a href="#how-it-works" class="border border-slate-600 text-center px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition">Explore Programs</a>
+                </div>
+            </div>
+            <div class="flex justify-center relative">
+                <!-- Large Decorative Chess Icon Backdrop -->
+                <div class="w-72 h-72 lg:w-96 lg:h-96 bg-indigo-600/10 rounded-full absolute blur-3xl"></div>
+                <i class="fa-solid fa-chess-queen text-[12rem] lg:text-[18rem] text-indigo-500/20 animate-pulse relative z-10"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. How It Works (4 Steps) -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">A Structured Path to Chess Mastery</h2>
+                <p class="text-slate-600 text-lg">We make learning chess seamless, clear, and highly rewarding in 4 simple stages.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative group hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">1</div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Book Your Free Trial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">We assess your child's level in a free, 30-minute private 1-on-1 session.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative group hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">2</div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Get Your Custom Plan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Your child is matched into a tight small group (3-5 kids) of matching age & skill.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative group hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">3</div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Learn & Compete</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Join weekly high-energy live classes, guided practice runs, and academy tournaments.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative group hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">4</div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Track Progress</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Receive robust monthly progress reports and get direct updates via your coach's WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Coaches Section -->
+    <section id="coaches" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Our FIDE-Rated Coaches are Mentors</h2>
+                <p class="text-slate-600 text-lg">Learn directly from internationally recognized experts who know how to make chess engaging.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Coach 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden text-center p-6">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold shadow-md">AP</div>
+                    <h3 class="font-bold text-lg text-slate-900">Anant Panwar</h3>
+                    <p class="text-indigo-600 text-sm font-medium mb-2">Head Chess Coach</p>
+                    <p class="text-slate-500 text-xs">Senior National Arbiter ensuring exceptional, highly accessible structural paths for kids.</p>
+                </div>
+                <!-- Coach 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden text-center p-6">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-blue-500 to-indigo-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold shadow-md">RY</div>
+                    <h3 class="font-bold text-lg text-slate-900">Rohit Yadav</h3>
+                    <p class="text-indigo-600 text-sm font-medium mb-2">FIDE Rated 2000+</p>
+                    <p class="text-slate-500 text-xs">Specializes in breaking down highly tactical, complex opening combinations for intermediate skill brackets.</p>
+                </div>
+                <!-- Coach 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden text-center p-6">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-slate-700 to-slate-900 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold shadow-md">SP</div>
+                    <h3 class="font-bold text-lg text-slate-900">Shaurya Prabhakar</h3>
+                    <p class="text-indigo-600 text-sm font-medium mb-2">Chess Coach</p>
+                    <p class="text-slate-500 text-xs">An expert at fundamental habits, puzzle frameworks, and cultivating extreme patience during endgames.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Trusted by Parents Worldwide</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-4">
+                    <div class="flex text-amber-400 gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-600 italic">"Aditya achieved his FIDE rating in just his second tournament. ChessCraze Academy's structured training and support accelerated his growth remarkably."</p>
+                    <p class="font-bold text-slate-900 text-sm">- Sanjay P. (Parent of 15-year-old)</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-4">
+                    <div class="flex text-amber-400 gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-600 italic">"Gauri started as a beginner and now defeats rated players in tournaments. ChessCraze Academy has guided her step by step with excellent coaching."</p>
+                    <p class="font-bold text-slate-900 text-sm">- Anurag T. (Parent of 14-year-old)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Call To Action Form -->
+    <section id="cta" class="py-20 bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-950 text-white">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Claim Your Free Session</h2>
+                <p class="text-indigo-200">Give us 30 minutes, and we will map out your child's custom road to mastery.</p>
+            </div>
+            <form class="bg-white p-6 sm:p-8 rounded-2xl text-slate-800 text-left space-y-4 shadow-2xl" onsubmit="event.preventDefault(); alert('Trial Booked Successfully!');">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Parent's Name</label>
+                    <input type="text" required placeholder="e.g. Sanjay Prasad" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">WhatsApp Number</label>
+                    <input type="tel" required placeholder="e.g. +91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Child's Age & Experience</label>
+                    <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+                        <option>Absolute Beginner (Age 5-9)</option>
+                        <option>Absolute Beginner (Age 10+)</option>
+                        <option>Knows moves, needs strategy</option>
+                        <option>Advanced / Intermediate (Has played tournaments)</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-indigo-600/30 mt-2">
+                    Book Free 30-Min Assessment
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <p class="font-semibold text-white">&copy; 2026 ChessCraze Academy Clone. All rights reserved.</p>
+            <p class="text-xs max-w-md mx-auto leading-relaxed">
+                This layout blueprint implements responsive clean components mimicking the foundational landing funnel setups of tactical education institutes.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
